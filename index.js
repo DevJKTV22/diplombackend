@@ -35,11 +35,11 @@ app.use('/commentanimal', commentToAnimalRoute);
 app.use('/commentpost', commentToPostRoute);
 app.use('/donation', donationRoute);
 //----------------- variant 1--------------------
-app.listen(5000, (err) => {
-    if (err) {
-        return console.log(err);
-    }
-    console.log('Server OK, Hello my server. port 5000');
+const PORT = process.env.PORT || 5000;
+const HOST = '0.0.0.0';
 
+app.listen(PORT,HOST,(error)=>{
+    error
+    ? console.log(error)
+    :console.log(`Server OK.`);
 });
-
