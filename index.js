@@ -22,7 +22,7 @@ try {
 } catch (error) {
     console.error('Connection error: ', error);
 }
-app.use(cors({ credentials: true, origin: 'https://diplomfront-4f7735aca201.herokuapp.com/' }));
+app.use(cors({ credentials: true, origin: 'https://diplomfront-4f7735aca201.herokuapp.com' }));
 app.use(cookieParser());
 app.use(express.json());
 
